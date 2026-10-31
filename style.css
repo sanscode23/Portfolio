@@ -683,7 +683,7 @@ section {
 .btn.btn-outline:hover {
   border-color: var(--main-color);
   color: var(--main-color);
-  background: rgba(183, 75, 75, 0.1);
+  background: rgba(0, 242, 254, 0.08);
 }
 
 /* 6. SERVICES SECTION */
@@ -1108,6 +1108,7 @@ section {
 
 .project-card .card-cta {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.2rem;
 }
 
