@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanskar Wankhede | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Sanskar Wankhede - Full Stack MERN Developer, Electronics and Telecommunication Engineering student at PICT Pune." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sanskar Wankhede | Full Stack Developer" />
+  <meta property="og:description" content="Portfolio of Sanskar Wankhede: MOODNEST, RE:LIFE, SAR Narrative Generator, AWS IaC Drift Detective." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SIMPLE & ELEGANT SMILEY INTRO OVERLAY -->
+  <div id="introOverlay" class="intro-overlay">
+    <button id="skipIntroBtn" class="intro-skip-btn">Skip &rarr;</button>
+
+    <div class="intro-content">
+      <!-- Textured Glowing Sphere with Animated Smiling Face -->
+      <div class="smiley-wrapper">
+        <div class="ambient-glow"></div>
+        <div class="particle-ring"></div>
+
+        <div class="smiley-sphere">
+          <div class="sphere-texture"></div>
+          <div class="sphere-highlight"></div>
+
+          <!-- SVG Smiling Facial Expression -->
+          <svg class="smiley-face" viewBox="0 0 120 120">
+            <!-- Left Eye -->
+            <ellipse class="eye eye-left" cx="42" cy="48" rx="6" ry="8" />
+            <circle class="eye-shine shine-left" cx="44" cy="45" r="2.2" />
+
+            <!-- Right Eye -->
+            <ellipse class="eye eye-right" cx="78" cy="48" rx="6" ry="8" />
+            <circle class="eye-shine shine-right" cx="80" cy="45" r="2.2" />
+
+            <!-- Rosy Cheeks -->
+            <circle class="cheek cheek-left" cx="32" cy="62" r="7" />
+            <circle class="cheek cheek-right" cx="88" cy="62" r="7" />
+
+            <!-- Gentle Warm Smile Curve -->
+            <path class="mouth" d="M 40 68 Q 60 88 80 68" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Quote Below the Smiley -->
+      <div class="intro-quote-container">
+        <div class="quote-symbol">&ldquo;</div>
+        <p class="quote-text">Every great developer you know started by solving a problem with a simple smile and a curious mind.</p>
+        <span class="quote-author">&mdash; Welcome to my space &middot; Sanskar Wankhede</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>Sanskar<span class="logo-slash">&#47;</span><span class="logo-bracket">&gt;</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Tech Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="home" id="home">
+      <!-- Profile Photo (At the top on mobile, on the left on desktop) -->
+      <div class="home-img">
+        <div class="img-box">
+          <img src="Profile.jpeg" alt="Sanskar Wankhede" id="heroAvatar" />
+        </div>
+      </div>
+
+      <div class="home-content">
+        <h1>Hi, It's <span>Sanskar</span></h1>
+        <h3 class="text-animation">I'm a <span class="typing-text">Full Stack Developer</span><span class="cursor">|</span></h3>
+        <p>
+          Electronics and Telecommunication engineering student at PICT with hands-on experience building full-stack MERN applications.
+          Skilled in React, Node.js, Express, MongoDB and REST APIs, with projects spanning both frontend and backend development and exposure to AWS-based cloud solutions.
+        </p>
+
+        <!-- Social Media Circular Icons (Direct Links) -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sanskar-wankhede-041654313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/sanscode23" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:sanskarw2123@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <!-- Action Buttons (View Projects, Contact Me, Resume) -->
+        <div class="btn-group">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          <a href="resume.pdf" download="Sanskar_Wankhede_Resume.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Full Stack MERN Development</h3>
+          <p>
+            Building end-to-end web applications with MongoDB, Express.js, React.js, and Node.js, delivering clean architecture, secure authentication, and seamless user experiences.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-brands fa-react"></i>
+          <h3>Frontend Engineering</h3>
+          <p>
+            Crafting responsive, high-performance user interfaces with React, Vite, and Tailwind CSS. Implementing state management, protected routes, and interactive components.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-server"></i>
+          <h3>Backend & RESTful APIs</h3>
+          <p>
+            Architecting secure server-side logic with Node.js and Express. Building REST APIs with input validation, JWT authentication, rate limiting, and automated testing.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-brands fa-aws"></i>
+          <h3>AWS & Cloud Solutions</h3>
+          <p>
+            Experience with serverless architecture and cloud services including AWS Bedrock (Generative AI), Lambda, CloudFormation, S3, Amplify, DynamoDB, and SNS.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Database Architecture</h3>
+          <p>
+            Designing scalable NoSQL schemas with MongoDB & Mongoose alongside relational database fundamentals with SQL for efficient data modeling and aggregation.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-comments"></i>
+          <h3>Real-Time & Media Workflows</h3>
+          <p>
+            Integrating WebSocket communication with Socket.io for live chats, instant notifications, and Cloudinary for optimized media storage and upload pipelines.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK & PROJECT USAGE SECTION -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Tech <span>Stack</span></h2>
+
+      <!-- Tech Stack Usage Percentage According to Projects -->
+      <div class="project-usage-container">
+        <div class="usage-header">
+          <h3><i class="fa-solid fa-chart-pie"></i> Tech Stack Distribution Across My Projects</h3>
+          <p>Calculated based on codebase architecture, library dependencies, and core roles in MOODNEST, RE:LIFE, SAR Generator, and AWS Drift Detective</p>
+        </div>
+
+        <!-- Segmented Distribution Bar -->
+        <div class="segmented-bar-wrapper">
+          <div class="segmented-bar">
+            <span class="seg seg-react" style="width: 35%;" data-tooltip="React.js: 35%"></span>
+            <span class="seg seg-node" style="width: 25%;" data-tooltip="Node & Express: 25%"></span>
+            <span class="seg seg-mongo" style="width: 20%;" data-tooltip="MongoDB & SQL: 20%"></span>
+            <span class="seg seg-tailwind" style="width: 12%;" data-tooltip="AWS & Cloud Services: 12%"></span>
+            <span class="seg seg-tools" style="width: 8%;" data-tooltip="Tailwind, Vite & Tools: 8%"></span>
+          </div>
+          <div class="segmented-legend">
+            <span class="legend-item"><span class="dot dot-react"></span> React.js (35%)</span>
+            <span class="legend-item"><span class="dot dot-node"></span> Node.js & Express (25%)</span>
+            <span class="legend-item"><span class="dot dot-mongo"></span> MongoDB & SQL (20%)</span>
+            <span class="legend-item"><span class="dot dot-tailwind"></span> AWS Cloud Services (12%)</span>
+            <span class="legend-item"><span class="dot dot-tools"></span> Tailwind, Vite & Tools (8%)</span>
+          </div>
+        </div>
+
+        <!-- Project Usage Percentage Cards -->
+        <div class="usage-grid">
+          <div class="usage-card">
+            <div class="usage-top">
+              <span class="usage-icon"><i class="fa-brands fa-react"></i></span>
+              <span class="usage-pct">35%</span>
+            </div>
+            <h4>React.js</h4>
+            <div class="usage-meta">Core UI, Dashboards, Protected Routes & State</div>
+            <div class="usage-bar"><span style="--pct: 35%;"></span></div>
+            <div class="usage-footer"><i class="fa-solid fa-diagram-project"></i> Applied in 4/4 Projects (100%)</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-top">
+              <span class="usage-icon"><i class="fa-brands fa-node-js"></i></span>
+              <span class="usage-pct">25%</span>
+            </div>
+            <h4>Node.js & Express</h4>
+            <div class="usage-meta">RESTful APIs, JWT Auth, Backend Processing</div>
+            <div class="usage-bar"><span style="--pct: 25%;"></span></div>
+            <div class="usage-footer"><i class="fa-solid fa-diagram-project"></i> Applied in 3/4 Projects (75%)</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-top">
+              <span class="usage-icon"><i class="fa-solid fa-database"></i></span>
+              <span class="usage-pct">20%</span>
+            </div>
+            <h4>MongoDB & SQL</h4>
+            <div class="usage-meta">Data Persistence, Schemas, DynamoDB & SQL</div>
+            <div class="usage-bar"><span style="--pct: 20%;"></span></div>
+            <div class="usage-footer"><i class="fa-solid fa-diagram-project"></i> Applied in 4/4 Projects (100%)</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-top">
+              <span class="usage-icon"><i class="fa-brands fa-aws"></i></span>
+              <span class="usage-pct">12%</span>
+            </div>
+            <h4>AWS Cloud</h4>
+            <div class="usage-meta">Bedrock GenAI, Lambda, S3, Amplify & SNS</div>
+            <div class="usage-bar"><span style="--pct: 12%;"></span></div>
+            <div class="usage-footer"><i class="fa-solid fa-diagram-project"></i> Applied in 2/4 Projects (50%)</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-top">
+              <span class="usage-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+              <span class="usage-pct">8%</span>
+            </div>
+            <h4>Vite, Socket.io & Tools</h4>
+            <div class="usage-meta">Cloudinary Uploads, Real-Time Chat, Postman</div>
+            <div class="usage-bar"><span style="--pct: 8%;"></span></div>
+            <div class="usage-footer"><i class="fa-solid fa-diagram-project"></i> Applied in 4/4 Projects (100%)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Tech Stack Badges from Resume -->
+      <h3 class="badges-title">Full Technology Stack</h3>
+      <div class="skills-badges">
+        <span class="badge"><i class="fa-brands fa-react"></i> React.js</span>
+        <span class="badge"><i class="fa-brands fa-node"></i> Node.js</span>
+        <span class="badge"><i class="fa-solid fa-server"></i> Express.js</span>
+        <span class="badge"><i class="fa-solid fa-database"></i> MongoDB</span>
+        <span class="badge"><i class="fa-brands fa-aws"></i> AWS (Bedrock, S3, Amplify)</span>
+        <span class="badge"><i class="fa-solid fa-cloud"></i> AWS Lambda</span>
+        <span class="badge"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+        <span class="badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="badge"><i class="fa-brands fa-java"></i> Java</span>
+        <span class="badge"><i class="fa-solid fa-code"></i> C++ / C</span>
+        <span class="badge"><i class="fa-solid fa-table"></i> SQL</span>
+        <span class="badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+        <span class="badge"><i class="fa-brands fa-github"></i> GitHub</span>
+        <span class="badge"><i class="fa-solid fa-comments"></i> Socket.io</span>
+        <span class="badge"><i class="fa-solid fa-key"></i> JWT Auth</span>
+        <span class="badge"><i class="fa-solid fa-image"></i> Cloudinary</span>
+        <span class="badge"><i class="fa-solid fa-bolt-lightning"></i> Vite</span>
+        <span class="badge"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (Real Projects with Live Demos & GitHub Links) -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Featured <span>Projects</span></h2>
+
+      <div class="projects-container">
+        <!-- Project 1: MOODNEST -->
+        <article class="project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-photo-film folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/sardakhushi30-cloud/MoodNest.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>MOODNEST</h3>
+          <p>
+            Pinterest-inspired visual content sharing platform with boards, pins, and an explore feed. Built responsive, reusable React UI with Tailwind CSS and React Router (protected routes, board management), integrated REST APIs via Axios, and real-time chat via Socket.io with toast notifications.
+          </p>
+          <div class="tags">
+            <span>React.js</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>Socket.io</span>
+            <span>Cloudinary</span>
+          </div>
+          <div class="card-cta">
+            <a href="https://github.com/sardakhushi30-cloud/MoodNest.git" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-brands fa-github"></i> Project Repo</a>
+          </div>
+        </article>
+
+        <!-- Project 2: RE:LIFE -->
+        <article class="project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-recycle folder-icon"></i>
+            <div class="project-links">
+              <a href="https://staging.d20bqmsdb74o6q.amplifyapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3>RE:LIFE</h3>
+          <p>
+            AI-powered sustainability platform recommending repair, reuse, donate, resell, or recycle paths for old electronics. Built secure REST APIs for authentication, device assessment, AI recommendations via AWS Bedrock, repair-vs-replace comparisons, data-safety checklists, and verification certificates.
+          </p>
+          <div class="tags">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>AWS Bedrock</span>
+            <span>AWS S3</span>
+            <span>AWS Amplify</span>
+          </div>
+          <div class="card-cta">
+            <a href="https://staging.d20bqmsdb74o6q.amplifyapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <!-- Project 3: SAR NARRATIVE GENERATOR -->
+        <article class="project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-file-shield folder-icon"></i>
+            <div class="project-links">
+              <a href="https://sar-narrative-generator.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3>SAR NARRATIVE GENERATOR</h3>
+          <p>
+            FinTech compliance web app automating Suspicious Activity Report (SAR) narrative writing. Implemented Node.js and Express backend logic to process form inputs and generate structured narratives instantly. Utilized MongoDB to securely store and manage reports, significantly reducing manual effort.
+          </p>
+          <div class="tags">
+            <span>MERN</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Vercel</span>
+          </div>
+          <div class="card-cta">
+            <a href="https://sar-narrative-generator.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <!-- Project 4: AWS IaC DRIFT DETECTIVE -->
+        <article class="project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-cloud-bolt folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/yawale-mrun-7/aws-infra-drift-detection.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>AWS IaC DRIFT DETECTIVE</h3>
+          <p>
+            Serverless platform for monitoring AWS CloudFormation infrastructure drift. Built the React dashboard to visualize infrastructure health and detect configuration drift. Displayed Bedrock-generated, human-readable drift explanations and historical records fetched from backend APIs.
+          </p>
+          <div class="tags">
+            <span>React.js</span>
+            <span>AWS Lambda</span>
+            <span>CloudFormation</span>
+            <span>AWS Bedrock</span>
+            <span>DynamoDB</span>
+            <span>SNS</span>
+          </div>
+          <div class="card-cta">
+            <a href="https://github.com/yawale-mrun-7/aws-infra-drift-detection.git" target="_blank" rel="noopener noreferrer" class="btn btn-sm"><i class="fa-brands fa-github"></i> Project Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education</span></h2>
+
+      <div class="timeline-container">
+        <div class="timeline-box">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2024 – 2028 (Expected)</div>
+            <div class="timeline-content">
+              <h3>Pune Institute of Computer Technology (PICT)</h3>
+              <h4>B.Tech in Electronics and Telecommunication Engineering | CGPA: 8.47 / 10</h4>
+              <p>
+                Core Subjects: Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks.
+                Active member in the AWS Student Builder Group PICT.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2021 – 2023</div>
+            <div class="timeline-content">
+              <h3>Lady Anusuya Singhania Educational Academy</h3>
+              <h4>CBSE (Class XII) | 79.20%</h4>
+              <p>
+                Senior secondary education focusing on Physics, Chemistry, and Advanced Mathematics with strong analytical foundations.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2020 – 2021</div>
+            <div class="timeline-content">
+              <h3>Pinnacle International School</h3>
+              <h4>SSC (Class X) | 95.00%</h4>
+              <p>
+                Graduated with top academic standing, excelling in science, mathematics, and computer literacy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience" id="experience">
+      <h2 class="heading">Work <span>Experience</span></h2>
+
+      <div class="timeline-container">
+        <div class="timeline-box">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Jul 2026 – Aug 2026</div>
+            <div class="timeline-content">
+              <h3>Frontend Developer Intern</h3>
+              <h4>AWS Student Builder Group, PICT | Pune, India</h4>
+              <p>
+                Worked as a Frontend Developer Intern on the AWS IaC Drift Detective project, a serverless platform for monitoring AWS CloudFormation infrastructure drift.
+                Built the React dashboard to visualize infrastructure health and detected configuration drift, and integrated the UI with backend APIs in close collaboration with the cloud team.
+              </p>
+              <div class="tech-tags">
+                <span>React.js</span>
+                <span>AWS CloudFormation</span>
+                <span>AWS Bedrock</span>
+                <span>REST APIs</span>
+                <span>UI Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"><i class="fa-solid fa-trophy"></i> Achievements & Leadership</div>
+            <div class="timeline-content">
+              <h3>Achievements & Extracurricular Leadership</h3>
+              <h4>PICT Pune & Tech Communities</h4>
+              <p>
+                • <strong>IoT Genesis Ideathon:</strong> Ranked in the <strong>Top 30</strong> among 100 teams at Vishwakarma Institute of Technology (VIT), Pune.<br />
+                • <strong>Head of Events (AWS Student Builder Group PICT):</strong> Coordinated and managed technical events, speaker coordination, participant engagement, and on-ground execution.<br />
+                • <strong>POC (Impetus and Concepts - INC):</strong> Coordinated operations and participant management for university technical festival.<br />
+                • <strong>Overall Coordinator (Pictofest):</strong> Led college-level arts & technical festival management.
+              </p>
+              <div class="tech-tags">
+                <span>Event Leadership</span>
+                <span>Ideathons</span>
+                <span>Team Coordination</span>
+                <span>Public Speaking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Get In <span>Touch</span></h2>
+
+      <div class="contact-container">
+        <!-- Contact Info Side -->
+        <div class="contact-info">
+          <h3>Let's Connect!</h3>
+          <p>
+            Open to developer roles, internships, and full-stack collaborations. Whether you have a project idea, an opportunity, or just want to discuss web tech and cloud architecture, feel free to reach out!
+          </p>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-details">
+              <h4>Email</h4>
+              <a href="mailto:sanskarw2123@gmail.com">sanskarw2123@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-details">
+              <h4>Phone</h4>
+              <a href="tel:+917875390131">+91 78753 90131</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="info-details">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/sanskar-wankhede-041654313/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sanskar-wankhede</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="info-details">
+              <h4>GitHub</h4>
+              <a href="https://github.com/sanscode23" target="_blank" rel="noopener noreferrer">github.com/sanscode23</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="info-details">
+              <h4>Resume</h4>
+              <a href="resume.pdf" download="Sanskar_Wankhede_Resume.pdf">Download Resume (PDF)</a>
+            </div>
+          </div>
+
+          <!-- Socials: LinkedIn, GitHub, Email -->
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/sanskar-wankhede-041654313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/sanscode23" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:sanskarw2123@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form Side -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjyyeozz" method="POST">
+          <div class="input-box">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+          </div>
+
+          <div class="input-box">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          </div>
+
+          <textarea id="message" name="message" cols="30" rows="7" placeholder="Your Message" required></textarea>
+
+          <!-- File Upload Widget (Cloudinary-backed) -->
+          <div class="file-upload-wrapper">
+            <label for="fileAttachment" class="file-upload-label" id="fileUploadLabel">
+              <i class="fa-solid fa-paperclip"></i>
+              <span id="fileLabelText">Attach Image or PDF (Optional, max 10MB)</span>
+            </label>
+            <input type="file" id="fileAttachment" accept="image/*,.pdf" style="display: none;" />
+            <button type="button" id="removeFileBtn" class="remove-file-btn" style="display: none;" title="Remove attachment">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Hidden field holding the uploaded Cloudinary URL for Formspree -->
+          <input type="hidden" id="cloudinaryFileUrl" name="attached_file_link" value="" />
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>&copy; 2026 <span>Sanskar Wankhede</span> | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Thank you! Your message has been sent successfully.</span>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
